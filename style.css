@@ -1,0 +1,349 @@
+/* -----------global------------- */ 
+
+html {
+	position: relative; /*sticky footer next 2 lines */
+	min-height: 100%;
+}
+
+body {
+	/*padding-top: 70px; /*counteract navbar overlapping on top of next container, must be same height as navbar */
+	font-family: Muli;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+#home, #work, .footer {
+	background-image: url("cubes.png");
+	background-color: #348B8B;
+	background-attachment: fixed;
+	color: #EFE7CD;
+}
+
+#about, #contact {
+	background-image: url("cubes-9B9B9B.png");
+	background-color: #EFE7CD;
+	background-attachment: fixed;
+	color: #2C3E50;
+}
+
+p {
+	font-size: 22px;
+}
+
+.anchor { 
+	padding-top: 65px; /*prevent navbar from hiding anchor sections */
+	margin-top: -65px;
+	padding-bottom: -65px; /*prevent next section from hiding this section */
+	margin-bottom: 65px;
+}
+
+/* ----------------navbar--------------*/
+
+.navbar {
+	background: #348B8B;
+	opacity: .95; /*transparent navbar*/
+}
+
+.navbar, .navbar-brand { /*navbar height */
+	min-height: 65px;
+	max-height: 65px;
+	height: 65px;
+}
+
+.navbar a:hover {
+	background-color: #FF6F69;
+}
+
+.navbar button {
+	width: 66px;
+	height: 65px;
+}
+
+.navbar-toggle {
+	border-radius: 0px;
+	margin-top: 0px;
+	padding-left: 20px;
+}
+
+
+.navbar-toggle .icon-bar {
+	background-color: #EFE7CD; /*change color of icon-bar*/
+}
+
+.nav li a {
+	padding-top: 20px; /*move nav links around */
+	padding-bottom: 25px; /*enable block hightlight nav link when hover correctly */
+	color: #EFE7CD;
+	font-size: 22px;
+}
+
+.nav li a:hover {
+	/*color: #FF6F69; */
+	background-color: #FF6F69; 
+}
+
+@media only screen and (max-width: 766px) {
+	.collapsing, .in {
+		background-color: #348B8B;
+	}
+}
+
+/* ------------------top------------------- */
+
+#home {
+	height: 865px; /* height of home section, 70px for the navbar to prevent obsure */
+}
+
+#home h1 {
+	font-size: 100px; /*change size for small screens or will scroll horiz!! */
+	color: #FF6F69;
+	position: relative;
+	top: 240px; /*position name */
+}
+
+#home h2 {
+	font-size: 40px;
+	color: #EFE7CD;
+	position: relative;
+	top: 230px; /*position desc*/
+}
+
+/* -----------------about--------------------*/
+
+#about {
+	height: 800px; /* height of about section */
+}
+
+/*#about > * {
+	border: 1px solid black;
+}*/
+
+#about img {
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+#about h3 {
+	margin-top: 0px;
+}
+
+.skills p{
+	padding: 10px 0; /*space between skill points */	
+}
+
+/* ----------------work-------------------*/
+
+#work {
+	height: 800px;
+}
+
+#work h1 {
+	margin-bottom: 20px; /* space after title */
+}
+
+.gallery li {
+	margin: 0 auto; /*center boxes within cols horizontally*/
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translate(0,50%); /*center vertically */
+	padding: 10px; /*space between boxes */
+}
+
+.gallery {
+	/*list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;*/
+}
+
+.text-content {
+	background: #2C3E50;
+	opacity: .5;
+	color: #FF6F69;
+	cursor: pointer;
+	display: table;
+	height: 280px;
+	width: 280px;
+	position: absolute;
+	left: 10px; /*accomadate horiz padding */
+	top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+
+}
+
+.text-content span {
+	display: table-cell;
+	text-align: center; /*center text */
+	vertical-align: middle; 
+	font-size: 24px;
+}
+
+.gallery li:hover span.text-content {
+	opacity: .75;
+}
+
+/*css hover based on http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/ */
+
+
+/*--------------contact--------------------*/
+
+#contact > * {
+	/*border: 1px solid black; */
+}
+
+#contact {
+	height: 730px;
+}
+
+.field {
+	font-size: 20px;
+	margin-top: 25px; /*space between fields*/
+}
+
+#name, #email, #subject, #message {
+	border: 1px solid #2C3E50;
+	background: #EFE7CD;
+	padding: 5px;
+}
+
+#name, #email, #subject {
+	width: 100%;
+	height: 40px;
+}
+
+#name {
+	/*margin-right: 0px; space between fields */
+}
+
+#email {
+	/*margin-left: 0px; space between fields */
+}
+
+#message {
+	width: 100%;
+	height: 180px;
+}
+
+element.style {
+	width: ;
+}
+
+::-webkit-input-placeholder { /*webkit, blink, edge */
+	color: #FF6F69;
+}
+
+::-moz-placeholder { /*mozilla firefox 19+ */
+	color: #FF6F69;
+	opacity: 1;
+}
+
+:-ms-input-placeholder { /*IE 10-11 */
+	color: #FF6F69;
+}
+
+button {
+	height: 50px;
+	width: 150px;
+	font-size: 30px;
+	color: #EFE7CD;
+	margin-top: -10px;
+	background-color: #348B8B;
+	float: right;
+}
+
+button:hover {
+	background-color: #FF6F69;
+	color: #EFE7CD;
+}
+
+/*-----------------footer------------------*/
+
+.footer {
+	width: 100%;
+	position: absolute; /*sticky footer next 4 lines */
+	left: 0; 
+	bottom: 0;
+	height: 150px;
+}
+
+.social ul {
+	/*text-align: center;
+	list-style: none;
+	padding: 0; remove indentation from list
+	margin: 0;*/
+}
+.social li {
+	display: inline-block;
+	margin-top: 10px;
+}
+.icon .fa { /*icon circles */
+	height: 50px;
+	width: 50px;
+	background-color: transparent;
+	border: 3px solid #EFE7CD; 
+	border-radius: 50%;
+}
+
+.icon .fa:hover { 
+	background-color: #EFE7CD;
+	border: 3px solid #FF6F69; 
+	border-radius: 50%;
+}
+
+.fa {
+	font-size: 28px;
+	color: #EFE7CD;
+	position: relative;
+	margin: 0 20px;
+	padding-top: 8px;
+} 
+
+.social .fa:hover {
+	color:#FF6F69;
+}
+
+.footer h5 {
+	position: relative;
+	bottom: -15px; /*position copyright on bottom, find better way?? */
+}
+
+.footer h5 a:hover {
+	text-decoration: none;
+}
+
+.footer span {
+	color: #FF6F69;
+}
+
+
+* {
+	border: 0px solid black;
+} 
+
+/* font colors
+#FF6F69 = red
+#348B8B = blue green
+#EFE7CD = tan
+#2C3E50 = dark blue 
+
+
+insert if when you make the screen narrower (to cell phone widths) there 
+is a gap between the navbar and the body. Also, a crowded navbar can wrap 
+to a multi-line bar, overwriting some of the content again.
+
+This solved these kinds of issues for me
+
+body { padding-top: 40px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+
+*/
