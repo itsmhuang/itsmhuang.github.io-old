@@ -15,14 +15,14 @@ body {
 }
 
 #home, #work, .footer {
-	background-image: url("cubes.png");
+	background-image: url("images/cubes.png");
 	background-color: #348B8B;
 	background-attachment: fixed;
 	color: #EFE7CD;
 }
 
 #about, #contact {
-	background-image: url("cubes-9B9B9B.png");
+	background-image: url("images/cubes-9B9B9B.png");
 	background-color: #EFE7CD;
 	background-attachment: fixed;
 	color: #2C3E50;
