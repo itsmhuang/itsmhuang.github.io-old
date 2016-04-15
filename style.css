@@ -3,11 +3,13 @@
 html {
 	position: relative; /*sticky footer next 2 lines */
 	min-height: 100%;
+	font-size: 16px; /*1em = 16px */
 }
 
 body {
 	/*padding-top: 70px; /*counteract navbar overlapping on top of next container, must be same height as navbar */
 	font-family: Muli;
+	font-size: 62.5%; /*change 1em = 10px */
 }
 
 .container-fluid {
@@ -29,7 +31,7 @@ body {
 }
 
 p {
-	font-size: 22px;
+	font-size: 2em; /*20px*/
 }
 
 .anchor { 
@@ -76,7 +78,7 @@ p {
 	padding-top: 20px; /*move nav links around */
 	padding-bottom: 25px; /*enable block hightlight nav link when hover correctly */
 	color: #EFE7CD;
-	font-size: 22px;
+	font-size: 2.2em; /* 22px */
 }
 
 .nav li a:hover {
@@ -97,14 +99,14 @@ p {
 }
 
 #home h1 {
-	font-size: 100px; /*change size for small screens or will scroll horiz!! */
+	font-size: 10em; /*100px, make smaller for xs */
 	color: #FF6F69;
 	position: relative;
 	top: 240px; /*position name */
 }
 
 #home h2 {
-	font-size: 40px;
+	font-size: 4em; /*40px */
 	color: #EFE7CD;
 	position: relative;
 	top: 230px; /*position desc*/
@@ -126,12 +128,13 @@ p {
 	margin: auto;
 }
 
-#about h3 {
+#about h2 {
 	margin-top: 0px;
 }
 
 .skills p{
-	padding: 10px 0; /*space between skill points */	
+	padding: 10px 0; /*space between skill points */
+	
 }
 
 /* ----------------work-------------------*/
@@ -183,7 +186,7 @@ p {
 	display: table-cell;
 	text-align: center; /*center text */
 	vertical-align: middle; 
-	font-size: 24px;
+	font-size: 2.2em; /*22px */
 }
 
 .gallery li:hover span.text-content {
@@ -208,7 +211,7 @@ p {
 }
 
 .field {
-	font-size: 20px;
+	font-size: 2em; /*20px*/
 	margin-top: 25px; /*space between fields*/
 }
 
@@ -256,7 +259,7 @@ element.style {
 button {
 	height: 50px;
 	width: 150px;
-	font-size: 30px;
+	font-size: 1.5em; /*30px*/
 	color: #EFE7CD;
 	margin-top: -10px;
 	background-color: #348B8B;
@@ -303,7 +306,7 @@ button:hover {
 }
 
 .fa {
-	font-size: 28px;
+	font-size: 2.8em; /*28px*/
 	color: #EFE7CD;
 	position: relative;
 	margin: 0 20px;
@@ -314,8 +317,9 @@ button:hover {
 	color:#FF6F69;
 }
 
-.footer h5 {
+.footer p {
 	position: relative;
+	font-size: 1.4em;
 	bottom: -15px; /*position copyright on bottom, find better way?? */
 }
 
@@ -337,17 +341,5 @@ button:hover {
 #348B8B = blue green
 #EFE7CD = tan
 #2C3E50 = dark blue 
-
-
-insert if when you make the screen narrower (to cell phone widths) there 
-is a gap between the navbar and the body. Also, a crowded navbar can wrap 
-to a multi-line bar, overwriting some of the content again.
-
-This solved these kinds of issues for me
-
-body { padding-top: 40px; }
-@media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
-}
 
 */
