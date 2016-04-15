@@ -195,12 +195,16 @@ p {
 
 /*--------------contact--------------------*/
 
-#contact > * {
-	/*border: 1px solid black; */
-}
-
 #contact {
 	height: 730px;
+}
+
+#contact a {
+	color: #FF6F69;
+}
+
+#contact a:hover {
+	text-decoration: none;
 }
 
 .field {
