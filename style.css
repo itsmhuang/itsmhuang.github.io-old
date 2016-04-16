@@ -181,9 +181,10 @@ p {
 	font-size: 2em; /*20px */
 }
 
-.gallery li:hover span.text-content {
+.gallery li:hover span.text-content, .gallery li:focus span.text-content {
 	opacity: .75;
 }
+
 
 /*css hover based on http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/ */
 
