@@ -344,7 +344,6 @@ lg = 1200 + */
 	}
 }
 
-
 @media screen and (max-width: 768px) { /*max-height: 660px ipad landscape */
 	.collapsing, .in {
 		background-color: #348B8B;
@@ -368,7 +367,7 @@ lg = 1200 + */
 	}
 }
 
-@media screen and (max-width: 602px), (max-height: 202px) { /*when pics stack */
+@media screen and (max-width: 602px) { /*when pics stack */
 	p {
 		font-size: 1.6em;
 	}
