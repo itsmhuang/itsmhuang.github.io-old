@@ -226,14 +226,6 @@ p {
 	height: 40px;
 }
 
-#name {
-	/*margin-right: 0px; space between fields */
-}
-
-#email {
-	/*margin-left: 0px; space between fields */
-}
-
 #message {
 	width: 100%;
 	height: 180px;
@@ -278,7 +270,7 @@ button:hover {
 	position: absolute; /*sticky footer next 4 lines */
 	left: 0; 
 	bottom: 0;
-	height: 150px;
+	height: 154px;
 }
 
 .social ul {
