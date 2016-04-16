@@ -31,7 +31,7 @@ body {
 }
 
 p {
-	font-size: 2em; /*20px*/
+	font-size: 1.7em; /*17px*/
 }
 
 .anchor { 
@@ -41,6 +41,9 @@ p {
 	margin-bottom: 65px;
 }
 
+* {
+	max-height: 10000px;
+}
 /* ----------------navbar--------------*/
 
 .navbar {
@@ -86,11 +89,6 @@ p {
 	background-color: #FF6F69; 
 }
 
-@media only screen and (max-width: 766px) {
-	.collapsing, .in {
-		background-color: #348B8B;
-	}
-}
 
 /* ------------------top------------------- */
 #home {
@@ -100,7 +98,7 @@ p {
 #home h1 {
 	font-size: 10em; /*100px, make smaller for xs */
 	color: #FF6F69;
-	margin-top: 240px;  /*position name */
+	margin-top: 250px;  /*position name */
 }
 
 #home h2 {
@@ -112,21 +110,25 @@ p {
 
 #about {
 	height: 800px; 
+
 }
 
 #about img {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
+	padding-bottom: 10px;
 }
 
 #about h2 {
 	margin-top: 0px;
+	padding-bottom: 10px;
+
 }
 
-.skills p{
+.skills ul li {
 	padding: 10px 0; /*space between skill points */
-	
+	font-size: 1.7em;
 }
 
 /* ----------------work-------------------*/
@@ -142,17 +144,8 @@ p {
 .gallery li {
 	margin: 0 auto; /*center boxes within cols horizontally*/
 	display: inline-block;
-	position: relative;
-	top: 50%;
 	transform: translate(0,50%); /*center vertically */
 	padding: 10px; /*space between boxes */
-}
-
-.gallery {
-	/*list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;*/
 }
 
 .text-content {
@@ -204,7 +197,7 @@ p {
 }
 
 .field {
-	font-size: 2em; /*20px*/
+	font-size: 1.7em; /*17px*/
 	margin-top: 25px; /*space between fields*/
 }
 
@@ -330,29 +323,33 @@ s = 768-991
 md = 992 - 1199
 lg = 1200 + */
 
-@media screen and (max-width: 1200px) {
-	#about {
-		height: 900px; 
+
+@media screen and (max-width: 1208px) {
+	.gallery li {
+		margin: 0 auto; /*center boxes within cols horizontally*/
+		display: inline-block;
+		transform: translate(0,0);
+		padding: 10px; /*space between boxes */
 	}
-	#work {
-		height: 930px;
-	}
+
 }
 
 @media screen and (max-width: 992px) {
 	#about {
-		height: 1050px; 
-	}
-	#work {
-		height: 930px;
+		height: 900px; 
 	}
 
 	#contact {
-		height: 800px;
+		height: 790px;
 	}
 }
 
-@media screen and (max-width: 768px), (max-height: 660px) {
+
+@media screen and (max-width: 768px) { /*max-height: 660px ipad landscape */
+	.collapsing, .in {
+		background-color: #348B8B;
+	}
+
 	#home h1 {
 		position: relative;
 		text-align: right;
@@ -361,15 +358,19 @@ lg = 1200 + */
 		position: relative;
 		text-align: right;
 	}
+ 
+	.skills {
+		padding: 10px 0;
+	}
 
-	#contact {
-		height: ;
+	.skills ul li {
+		padding: 0; /*space between skill points */
 	}
 }
 
 @media screen and (max-width: 602px), (max-height: 202px) { /*when pics stack */
 	p {
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
 	#home {
 		height: 550px;
@@ -388,25 +389,19 @@ lg = 1200 + */
 	}
 
 	#about {
-		height: 1200px;
+		height: 1050px;
 	}
 
 	#about img {
 		margin-bottom: 15px;
 	}
 
-	.skills {
-		padding: 10px 0;
-	}
-	.skills p {
-		padding: 0;
-	}
 	#work {
-		height: 1600px;
+		height: 1380px;
 	}
 
 	#contact {
-		height: 850px;
+		height: 830px;
 	}
 }
 
