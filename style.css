@@ -181,7 +181,7 @@ p {
 	font-size: 2em; /*20px */
 }
 
-.gallery li:hover span.text-content, .gallery li:focus span.text-content {
+.gallery li:hover .text-content, .gallery li:focus .text-content, .gallery li:active .text-content {
 	opacity: .75;
 }
 
