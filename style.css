@@ -335,3 +335,54 @@ button:hover {
 #2C3E50 = dark blue 
 
 */
+
+/* ----------- media queries --------- */
+
+/* xs = < 768px
+s = 768-991
+md = 992 - 1119
+lg = 1200 + */
+@media screen and (max-width: 768px) {
+	#home h1 {
+		position: relative;
+		top: 240px; /*position name */
+		text-align: right;
+	}
+	#home h2 {
+		position: relative;
+		top: 230px; /*position desc*/
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	#home h1 {
+		font-size: 7em; 		
+		position: relative;
+		top: 240px; /*position name */
+		text-align: right;
+	}
+	#home h2 {
+		font-size: 3em;
+		position: relative;
+		top: 230px; /*position desc*/
+		text-align: right;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
