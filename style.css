@@ -78,7 +78,7 @@ p {
 	padding-top: 20px; /*move nav links around */
 	padding-bottom: 25px; /*enable block hightlight nav link when hover correctly */
 	color: #EFE7CD;
-	font-size: 2.2em; /* 22px */
+	font-size: 2em; /* 20px */
 }
 
 .nav li a:hover {
@@ -93,7 +93,6 @@ p {
 }
 
 /* ------------------top------------------- */
-
 #home {
 	height: 865px; /* height of home section, 70px for the navbar to prevent obsure */
 }
@@ -101,26 +100,19 @@ p {
 #home h1 {
 	font-size: 10em; /*100px, make smaller for xs */
 	color: #FF6F69;
-	position: relative;
-	top: 240px; /*position name */
+	margin-top: 240px;  /*position name */
 }
 
 #home h2 {
 	font-size: 4em; /*40px */
 	color: #EFE7CD;
-	position: relative;
-	top: 230px; /*position desc*/
 }
 
 /* -----------------about--------------------*/
 
 #about {
-	height: 800px; /* height of about section */
+	height: 800px; 
 }
-
-/*#about > * {
-	border: 1px solid black;
-}*/
 
 #about img {
 	border-radius: 50%;
@@ -140,7 +132,7 @@ p {
 /* ----------------work-------------------*/
 
 #work {
-	height: 800px;
+	height: 800px; 
 }
 
 #work h1 {
@@ -186,7 +178,7 @@ p {
 	display: table-cell;
 	text-align: center; /*center text */
 	vertical-align: middle; 
-	font-size: 2.2em; /*22px */
+	font-size: 2em; /*20px */
 }
 
 .gallery li:hover span.text-content {
@@ -273,12 +265,6 @@ button:hover {
 	height: 154px;
 }
 
-.social ul {
-	/*text-align: center;
-	list-style: none;
-	padding: 0; remove indentation from list
-	margin: 0;*/
-}
 .social li {
 	display: inline-block;
 	margin-top: 10px;
@@ -340,48 +326,88 @@ button:hover {
 
 /* xs = < 768px
 s = 768-991
-md = 992 - 1119
+md = 992 - 1199
 lg = 1200 + */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1200px) {
+	#about {
+		height: 900px; 
+	}
+	#work {
+		height: 930px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#about {
+		height: 1050px; 
+	}
+	#work {
+		height: 930px;
+	}
+
+	#contact {
+		height: 800px;
+	}
+}
+
+@media screen and (max-width: 768px), (max-height: 660px) {
 	#home h1 {
 		position: relative;
-		top: 240px; /*position name */
 		text-align: right;
 	}
 	#home h2 {
 		position: relative;
-		top: 230px; /*position desc*/
 		text-align: right;
+	}
+
+	#contact {
+		height: ;
 	}
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 602px), (max-height: 202px) { /*when pics stack */
+	p {
+		font-size: 1.8em;
+	}
+	#home {
+		height: 550px;
+	}
+
 	#home h1 {
-		font-size: 7em; 		
-		position: relative;
-		top: 240px; /*position name */
+		font-size: 6.5em; 		
+		margin-top: 100px;
 		text-align: right;
 	}
 	#home h2 {
 		font-size: 3em;
 		position: relative;
-		top: 230px; /*position desc*/
+		top: ; /*position desc*/
 		text-align: right;
 	}
+
+	#about {
+		height: 1200px;
+	}
+
+	#about img {
+		margin-bottom: 15px;
+	}
+
+	.skills {
+		padding: 10px 0;
+	}
+	.skills p {
+		padding: 0;
+	}
+	#work {
+		height: 1600px;
+	}
+
+	#contact {
+		height: 850px;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
