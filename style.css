@@ -7,13 +7,21 @@ html {
 }
 
 body {
-	/*padding-top: 70px; /*counteract navbar overlapping on top of next container, must be same height as navbar */
-	font-family: Muli;
+	font-family: "Muli", Sans-Serif;
 	font-size: 62.5%; /*change 1em = 10px */
 }
 
 .container-fluid {
+	/*padding: 0 15px;*/
+	/*margin: 0 auto; width: 100%; */
+	/*padding: 0; width: 100%;*/
+	/*padding: 0 15px; margin-left: 0px; margin-right: 0px;*/
 	padding: 0;
+}
+
+.row {
+	/*padding-left: 0; padding-right: 0;*/
+	margin: 0;
 }
 
 #home, #work, .footer {
@@ -42,9 +50,6 @@ p {
 	margin-bottom: 65px;
 }
 
-* {
-	max-height: 10000px;
-}
 /* ----------------navbar--------------*/
 
 .navbar {
@@ -93,7 +98,7 @@ p {
 
 /* ------------------top------------------- */
 #home {
-	height: 865px; /* height of home section, 70px for the navbar to prevent obsure */
+	height: 768px; /* height of home section, 70px for the navbar to prevent obsure */
 }
 
 #home h1 {
@@ -183,7 +188,7 @@ p {
 /*--------------contact--------------------*/
 
 #contact {
-	height: 730px;
+	padding-bottom: 120px;
 }
 
 #contact a {
@@ -323,76 +328,35 @@ md = 992 - 1199
 lg = 1200 + */
 
 
-/*
-@media screen and (max-width: 992px) {
-	#about {
-		height: 900px; 
-	}
-
-	#contact {
-		height: 790px;
-	}
-}
 
 @media screen and (max-width: 768px) { /*max-height: 660px ipad landscape */
-	/*.collapsing, .in {
+	.collapsing, .in {
 		background-color: #348B8B;
 	}
-
-	#home h1 {
-		position: relative;
-		text-align: right;
-	}
-	#home h2 {
-		position: relative;
-		text-align: right;
-	}
- 
-	.skills {
-		padding: 10px 0;
-	}
-
-	.skills ul li {
-		padding: 0; /*space between skill points */
-	}
-}
-
-/*@media screen and (max-width: 602px) { /*when pics stack */
-	/*p {
-		font-size: 1.6em;
-	}
-	#home {
-		height: 550px;
+	
+	p {
+		font-size: 1.5em;
 	}
 
 	#home h1 {
-		font-size: 6.5em; 		
-		margin-top: 100px;
+		font-size: 6.5em;
+		margin-top: 200px;
 		text-align: right;
 	}
 	#home h2 {
 		font-size: 3em;
-		position: relative;
-		top: ; /*position desc*/
-		/*text-align: right;
+		text-align: right;
 	}
 
-	#about {
-		height: 1100px;
+	.skills h2 {
+		margin-bottom: -5px;
 	}
 
-	#about img {
-		margin-bottom: 15px;
+	.skills ul li {
+		line-height: 5px; /*space between skill points */
 	}
+}
 
-	#work {
-		height: 1380px;
-	}
-
-	#contact {
-		height: 830px;
-	}
-}*/
 
 
 
