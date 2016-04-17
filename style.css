@@ -13,7 +13,7 @@ body {
 }
 
 .container-fluid {
-	padding: 0px;
+	padding: 0;
 }
 
 #home, #work, .footer {
@@ -35,9 +35,10 @@ p {
 }
 
 .anchor { 
-	padding-top: 65px; /*prevent navbar from hiding anchor sections */
+	border: 0px solid red;
+	padding: 65px 0; /*prevent navbar from hiding anchor sections */
 	margin-top: -65px;
-	padding-bottom: -65px; /*prevent next section from hiding this section */
+	padding-bottom: ; /*-65px prevent next section from hiding this section */
 	margin-bottom: 65px;
 }
 
@@ -79,7 +80,7 @@ p {
 
 .nav li a {
 	padding-top: 20px; /*move nav links around */
-	padding-bottom: 25px; /*enable block hightlight nav link when hover correctly */
+	padding-bottom: 25.2px; /*enable block hightlight nav link when hover correctly */
 	color: #EFE7CD;
 	font-size: 2em; /* 20px */
 }
@@ -108,11 +109,6 @@ p {
 
 /* -----------------about--------------------*/
 
-#about {
-	height: 800px; 
-
-}
-
 #about img {
 	border-radius: 50%;
 	display: block;
@@ -134,7 +130,7 @@ p {
 /* ----------------work-------------------*/
 
 #work {
-	height: 800px; 
+	height: ; 
 }
 
 #work h1 {
@@ -144,9 +140,11 @@ p {
 .gallery li {
 	margin: 0 auto; /*center boxes within cols horizontally*/
 	display: inline-block;
-	transform: translate(0,50%); /*center vertically */
+	transform: translate(); /*center vertically */
 	padding: 10px; /*space between boxes */
 }
+
+
 
 .text-content {
 	background: #2C3E50;
@@ -242,6 +240,7 @@ button {
 	margin-top: -10px;
 	background-color: #348B8B;
 	float: right;
+	border: 0px;
 }
 
 button:hover {
@@ -324,16 +323,7 @@ md = 992 - 1199
 lg = 1200 + */
 
 
-@media screen and (max-width: 1208px) {
-	.gallery li {
-		margin: 0 auto; /*center boxes within cols horizontally*/
-		display: inline-block;
-		transform: translate(0,0);
-		padding: 10px; /*space between boxes */
-	}
-
-}
-
+/*
 @media screen and (max-width: 992px) {
 	#about {
 		height: 900px; 
@@ -345,7 +335,7 @@ lg = 1200 + */
 }
 
 @media screen and (max-width: 768px) { /*max-height: 660px ipad landscape */
-	.collapsing, .in {
+	/*.collapsing, .in {
 		background-color: #348B8B;
 	}
 
@@ -367,8 +357,8 @@ lg = 1200 + */
 	}
 }
 
-@media screen and (max-width: 602px) { /*when pics stack */
-	p {
+/*@media screen and (max-width: 602px) { /*when pics stack */
+	/*p {
 		font-size: 1.6em;
 	}
 	#home {
@@ -384,7 +374,7 @@ lg = 1200 + */
 		font-size: 3em;
 		position: relative;
 		top: ; /*position desc*/
-		text-align: right;
+		/*text-align: right;
 	}
 
 	#about {
@@ -402,7 +392,7 @@ lg = 1200 + */
 	#contact {
 		height: 830px;
 	}
-}
+}*/
 
 
 
