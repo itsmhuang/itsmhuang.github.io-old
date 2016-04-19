@@ -200,7 +200,10 @@ p {
 	border-radius: 0%;
 	background: #EFE7CD;
 	padding: 5px;
-
+	-webkit-box-shadow: inset 0px;
+	-moz-box-shadow: inset 0px;
+	-o-box-shadow: inset 0px;
+	-box-shadow: inset 0px;
 }
 
 #name, #email, #subject {
