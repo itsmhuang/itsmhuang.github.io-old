@@ -193,13 +193,14 @@ p {
 .field {
 	font-size: 1.7em; /*17px*/
 	margin-top: 25px; /*space between fields*/
-	border-radius: 0%;
 }
 
 #name, #email, #subject, #message {
 	border: 1px solid #2C3E50;
+	border-radius: 0%;
 	background: #EFE7CD;
 	padding: 5px;
+
 }
 
 #name, #email, #subject {
