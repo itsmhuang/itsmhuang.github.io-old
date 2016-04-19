@@ -42,7 +42,7 @@ p {
 	padding: 65px 0; /*prevent navbar from hiding anchor sections */
 	margin-top: -65px;
 	padding-bottom: ; /*-65px prevent next section from hiding this section */
-	margin-bottom: 65px;
+	margin-bottom: 50px;
 }
 
 /* ----------------navbar--------------*/
@@ -179,7 +179,7 @@ p {
 /*--------------contact--------------------*/
 
 #contact {
-	padding-bottom: 120px;
+	padding-bottom: 150px;
 }
 
 #contact a {
@@ -193,6 +193,7 @@ p {
 .field {
 	font-size: 1.7em; /*17px*/
 	margin-top: 25px; /*space between fields*/
+	border-radius: 0%;
 }
 
 #name, #email, #subject, #message {
