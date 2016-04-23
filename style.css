@@ -78,6 +78,10 @@ p {
 	background-color: #EFE7CD; /*change color of icon-bar*/
 }
 
+ul.nav {
+	border: 0px; /*remove weird 1px border-top*/
+}
+
 .nav li a {
 	padding-top: 20px; /*move nav links around */
 	padding-bottom: 25.2px; /*enable block hightlight nav link when hover correctly */
