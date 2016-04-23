@@ -19,7 +19,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<a href="#home" class="navbar-brand"><img src="images/my-logo.png"/></a>
+				<a href="index.html" class="navbar-brand"><img src="images/my-logo.png"/></a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -28,12 +28,13 @@
 				</button>
 			</div>
 			<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-				<li><a href="#about">About</a></li>
-				<li><a href="#work">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
+				<li><a href="#work"  data-toggle="collapse" data-target=".navbar-collapse.in">Portfolio</a></li>
+				<li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
 			</ul>
 		</div>
 	</div>
+	<!-- NAVBAR -->
 
 	<!-- HOME -->
 	<div class="container-fluid">
@@ -175,5 +176,6 @@
 
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
 	<script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
