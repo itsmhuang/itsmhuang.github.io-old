@@ -89,7 +89,10 @@ p {
 	/*color: #FF6F69; */
 	background-color: #FF6F69; 
 }
-
+/*.nav li a:focus {
+	background-color: #348B8B;
+}
+*/
 
 /* ------------------top------------------- */
 #home {
@@ -327,6 +330,9 @@ lg = 1200 + */
 		font-size: 1.5em;
 	}
 
+	#home {
+		height: 500px;
+	}
 	#home h1 {
 		font-size: 6.5em;
 		margin-top: 200px;
