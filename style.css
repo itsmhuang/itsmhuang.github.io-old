@@ -143,7 +143,7 @@ p {
 .gallery li {
 	margin: 0 auto; /*center boxes within cols horizontally*/
 	display: inline-block;
-	transform: translate(); /*center vertically */
+	transform: translate(0,0);
 	padding: 10px; /*space between boxes */
 }
 
@@ -163,7 +163,6 @@ p {
 	-moz-transition: opacity 500ms;
 	-o-transition: opacity 500ms;
 	transition: opacity 500ms;
-
 }
 
 .text-content span {
@@ -333,6 +332,7 @@ lg = 1200 + */
 	#home {
 		height: 560px;
 	}
+
 	#home h1 {
 		font-size: 6.5em;
 		margin-top: 200px;
