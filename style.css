@@ -34,7 +34,7 @@ body {
 }
 
 p {
-	font-size: 1.7em; /*17px*/
+	font-size: 2em;
 }
 
 .anchor { 
@@ -96,13 +96,13 @@ p {
 
 /* ------------------top------------------- */
 #home {
-	height: 768px; /* height of home section, 70px for the navbar to prevent obsure */
+	height: 870px; /* height of home section, 70px for the navbar to prevent obsure */
 }
 
 #home h1 {
 	font-size: 10em; /*100px, make smaller for xs */
 	color: #FF6F69;
-	margin-top: 250px;  /*position name */
+	margin-top: 300px;  /*position name */
 }
 
 #home h2 {
@@ -113,28 +113,29 @@ p {
 /* -----------------about--------------------*/
 
 #about img {
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	display: block;
 	margin: auto;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+#about h1 {
+	margin-bottom: 40px;
 }
 
 #about h2 {
-	margin-top: 0px;
-	padding-bottom: 10px;
+	margin-top: 40px;
+	padding-bottom: 30px;
 
 }
 
-.skills ul li {
-	padding: 10px 0; /*space between skill points */
-	font-size: 1.7em;
+.skills li {
+	padding: 30px;
+	font-size: 2.2em;
+	display: inline;
 }
 
 /* ----------------work-------------------*/
-
-#work {
-	height: ; 
-}
 
 #work h1 {
 	margin-bottom: 20px; /* space after title */
@@ -144,7 +145,11 @@ p {
 	margin: 0 auto; /*center boxes within cols horizontally*/
 	display: inline-block;
 	transform: translate(0,0);
-	padding: 10px; /*space between boxes */
+	padding: 20px; /*space between boxes */
+}
+
+.gallery li img {
+	width: 280px;
 }
 
 .text-content {
@@ -156,8 +161,8 @@ p {
 	height: 280px;
 	width: 280px;
 	position: absolute;
-	left: 10px; /*accomadate horiz padding */
-	top: 10px;
+	left: 20px; /*accomadate horiz padding */
+	top: 20px;
 	opacity: 0;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
@@ -190,6 +195,12 @@ p {
 
 #contact a:hover {
 	text-decoration: none;
+}
+
+form .row {
+	/*override custom .row margins*/
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 .field {
@@ -301,10 +312,6 @@ button:hover {
 	color: #FF6F69;
 }
 
-* {
-	border: 0px solid black;
-} 
-
 /* font colors
 #FF6F69 = red
 #348B8B = blue green
@@ -326,7 +333,7 @@ lg = 1200 + */
 	}
 	
 	p {
-		font-size: 1.5em;
+		/*font-size: 1.8em;*/
 	}
 
 	#home {
@@ -347,9 +354,21 @@ lg = 1200 + */
 		margin-bottom: -5px;
 	}
 
-	.skills ul li {
-		line-height: 5px; /*space between skill points */
+	.icon .fa { /*icon circles */
+		height: 35px;
+		width: 35px;
+		background-color: transparent;
+		border: 3px solid #EFE7CD; 
+		border-radius: 50%;
 	}
+
+	.fa {
+		font-size: 2em; /*28px*/
+		color: #EFE7CD;
+		position: relative;
+		margin: 0 20px;
+		padding-top: 5px;
+	} 
 }
 
 
