@@ -22,7 +22,7 @@ body {
 
 #home, #work, .footer {
 	background-image: url("images/cubes.png");
-	background-color: #348B8B;
+	background-color: #3493AF;
 	background-attachment: fixed;
 	color: #EDEDED;
 }
@@ -53,7 +53,7 @@ a:link, a:visited {
 /* ----------------navbar--------------*/
 
 .navbar {
-	background: #348B8B;
+	background: #3493AF;
 	opacity: .95;
 }
 
@@ -256,7 +256,7 @@ button {
 	font-size: 1.5em; /*30px*/
 	color: #EDEDED;
 	margin-top: -10px;
-	background-color: #348B8B;
+	background-color: #3493AF;
 	float: right;
 	border: 0px;
 }
@@ -322,7 +322,7 @@ button:hover {
 
 /* font colors
 #FF6F69 = red
-#348B8B = blue green
+#3493AF = blue green
 #EDEDED = tan
 #2C3E50 = dark blue 
 
@@ -337,7 +337,7 @@ lg = 1200 + */
 
 @media screen and (max-width: 768px) { /*max-height: 660px ipad landscape */
 	.collapsing, .in {
-		background-color: #348B8B;
+		background-color: #3493AF;
 	}
 	
 	p {
@@ -384,8 +384,8 @@ lg = 1200 + */
 }
 
 /*alternative colors 
-teal: #3493AF;
-pink: #FF7686;
+teal: #348B8B
+pink: #FF7686
 */
 
 
