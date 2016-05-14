@@ -8,6 +8,7 @@ html {
 
 body {
 	font-family: "Muli", Sans-Serif;
+	font-weight: 300;
 	font-size: 62.5%; /*change 1em = 10px */
 }
 
@@ -23,12 +24,12 @@ body {
 	background-image: url("images/cubes.png");
 	background-color: #348B8B;
 	background-attachment: fixed;
-	color: #EFE7CD;
+	color: #EDEDED;
 }
 
 #about, #contact {
 	background-image: url("images/cubes-9B9B9B.png");
-	background-color: #EFE7CD;
+	background-color: #EDEDED;
 	background-attachment: fixed;
 	color: #2C3E50;
 }
@@ -49,7 +50,7 @@ p {
 
 .navbar {
 	background: #348B8B;
-	opacity: .95; /*transparent navbar*/
+	opacity: .95;
 }
 
 .navbar, .navbar-brand { /*navbar height */
@@ -75,13 +76,13 @@ p {
 
 
 .navbar-toggle .icon-bar {
-	background-color: #EFE7CD; /*change color of icon-bar*/
+	background-color: #EDEDED; /*change color of icon-bar*/
 }
 
 .nav li a {
 	padding-top: 20px; /*move nav links around */
 	padding-bottom: 25.2px; /*enable block hightlight nav link when hover correctly */
-	color: #EFE7CD;
+	color: #EDEDED;
 	font-size: 2em; /* 20px */
 }
 
@@ -89,25 +90,28 @@ p {
 	/*color: #FF6F69; */
 	background-color: #FF6F69; 
 }
-/*.nav li a:focus {
-	background-color: #348B8B;
-}
-*/
 
 /* ------------------top------------------- */
 #home {
-	height: 870px; /* height of home section, 70px for the navbar to prevent obsure */
+	height: 780px; /* height of home section, 70px for the navbar to prevent obsure */
 }
 
 #home h1 {
 	font-size: 10em; /*100px, make smaller for xs */
 	color: #FF6F69;
-	margin-top: 300px;  /*position name */
+	margin-top: 270px;  /*position name */
+	line-height: .9em;
 }
 
 #home h2 {
 	font-size: 4em; /*40px */
-	color: #EFE7CD;
+	color: #EDEDED;
+	line-height: 1em;
+}
+
+#home h3 {
+	color: #EDEDED;
+	font-style: italic;
 }
 
 /* -----------------about--------------------*/
@@ -211,7 +215,7 @@ form .row {
 #name, #email, #subject, #message {
 	border: 1px solid #2C3E50;
 	border-radius: 0%;
-	background: #EFE7CD;
+	background: #EDEDED;
 	padding: 5px;
 	-webkit-box-shadow: inset 0px;
 	-moz-box-shadow: inset 0px;
@@ -246,7 +250,7 @@ button {
 	height: 50px;
 	width: 150px;
 	font-size: 1.5em; /*30px*/
-	color: #EFE7CD;
+	color: #EDEDED;
 	margin-top: -10px;
 	background-color: #348B8B;
 	float: right;
@@ -255,7 +259,7 @@ button {
 
 button:hover {
 	background-color: #FF6F69;
-	color: #EFE7CD;
+	color: #EDEDED;
 }
 
 /*-----------------footer------------------*/
@@ -276,19 +280,19 @@ button:hover {
 	height: 50px;
 	width: 50px;
 	background-color: transparent;
-	border: 3px solid #EFE7CD; 
+	border: 3px solid #EDEDED; 
 	border-radius: 50%;
 }
 
 .icon .fa:hover { 
-	background-color: #EFE7CD;
+	background-color: #EDEDED;
 	border: 3px solid #FF6F69; 
 	border-radius: 50%;
 }
 
 .fa {
 	font-size: 2.8em; /*28px*/
-	color: #EFE7CD;
+	color: #EDEDED;
 	position: relative;
 	margin: 0 20px;
 	padding-top: 8px;
@@ -315,7 +319,7 @@ button:hover {
 /* font colors
 #FF6F69 = red
 #348B8B = blue green
-#EFE7CD = tan
+#EDEDED = tan
 #2C3E50 = dark blue 
 
 */
@@ -350,6 +354,10 @@ lg = 1200 + */
 		text-align: right;
 	}
 
+	#home h3 {
+		font-size: 2em;
+		text-align: right;
+	}
 	.skills h2 {
 		margin-bottom: -5px;
 	}
@@ -358,18 +366,56 @@ lg = 1200 + */
 		height: 35px;
 		width: 35px;
 		background-color: transparent;
-		border: 3px solid #EFE7CD; 
+		border: 3px solid #EDEDED; 
 		border-radius: 50%;
 	}
 
 	.fa {
 		font-size: 2em; /*28px*/
-		color: #EFE7CD;
+		color: #EDEDED;
 		position: relative;
 		margin: 0 20px;
 		padding-top: 5px;
 	} 
 }
+
+/* ----------- safari --------- */
+
+.fm-bg-teal {
+	background-color: #3493AF;
+}
+
+.fm-clr-egg {
+	color: #EDEDED;
+}
+
+.fm-bg-egg {
+	background-color: #EDEDED;
+}
+
+.fm-clr2C3E50 {
+	color: ;
+}
+
+.fm-clr-salmon {
+	color: #FF7686;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
