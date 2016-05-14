@@ -46,6 +46,10 @@ p {
 	margin-bottom: 50px;
 }
 
+a:link, a:visited {
+	text-decoration: none;
+}
+
 /* ----------------navbar--------------*/
 
 .navbar {
@@ -346,7 +350,7 @@ lg = 1200 + */
 
 	#home h1 {
 		font-size: 6.5em;
-		margin-top: 200px;
+		margin-top: 150px;
 		text-align: right;
 	}
 	#home h2 {
@@ -379,27 +383,10 @@ lg = 1200 + */
 	} 
 }
 
-/* ----------- safari --------- */
-
-.fm-bg-teal {
-	background-color: #3493AF;
-}
-
-.fm-clr-egg {
-	color: #EDEDED;
-}
-
-.fm-bg-egg {
-	background-color: #EDEDED;
-}
-
-.fm-clr2C3E50 {
-	color: ;
-}
-
-.fm-clr-salmon {
-	color: #FF7686;
-}
+/*alternative colors 
+teal: #3493AF;
+pink: #FF7686;
+*/
 
 
 
