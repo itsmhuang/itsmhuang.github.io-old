@@ -115,7 +115,6 @@ a:link, a:visited {
 
 #home h3 {
 	color: #EDEDED;
-	font-style: italic;
 }
 
 /* -----------------about--------------------*/
@@ -325,7 +324,6 @@ button:hover {
 #3493AF = blue green
 #EDEDED = tan
 #2C3E50 = dark blue 
-
 */
 
 /* ----------- media queries --------- */
@@ -387,24 +385,3 @@ lg = 1200 + */
 teal: #348B8B
 pink: #FF7686
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
