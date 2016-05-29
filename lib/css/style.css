@@ -63,10 +63,6 @@ a:link, a:visited {
 	height: 65px;
 }
 
-.navbar a:hover {
-	background-color: #FF6F69;
-}
-
 .navbar button {
 	width: 66px;
 	height: 65px;
@@ -83,15 +79,15 @@ a:link, a:visited {
 	background-color: #EDEDED; /*change color of icon-bar*/
 }
 
-.nav li a {
+.nav>li>a {
 	padding-top: 20px; /*move nav links around */
 	padding-bottom: 25.2px; /*enable block hightlight nav link when hover correctly */
 	color: #EDEDED;
 	font-size: 2em; /* 20px */
+	background-color: #3493AF;
 }
 
-.nav li a:hover {
-	/*color: #FF6F69; */
+.nav>li>a:focus, .nav>li>a:hover {
 	background-color: #FF6F69; 
 }
 
@@ -308,7 +304,7 @@ button:hover {
 .footer p {
 	position: relative;
 	font-size: 1.4em;
-	bottom: -15px; /*position copyright on bottom, find better way?? */
+	bottom: -15px; /*position copyright on bottom*/
 }
 
 .footer h5 a:hover {
@@ -338,10 +334,6 @@ lg = 1200 + */
 		background-color: #3493AF;
 	}
 	
-	p {
-		/*font-size: 1.8em;*/
-	}
-
 	#home {
 		height: 560px;
 	}
