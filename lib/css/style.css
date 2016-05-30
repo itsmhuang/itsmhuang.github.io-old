@@ -63,6 +63,10 @@ a:link, a:visited {
 	height: 65px;
 }
 
+a.navbar-brand:hover {
+	background-color: #FF6F69;
+}
+
 .navbar button {
 	width: 66px;
 	height: 65px;
@@ -73,7 +77,6 @@ a:link, a:visited {
 	margin-top: 0px;
 	padding-left: 20px;
 }
-
 
 .navbar-toggle .icon-bar {
 	background-color: #EDEDED; /*change color of icon-bar*/
