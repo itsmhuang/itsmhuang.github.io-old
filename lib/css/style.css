@@ -14,7 +14,7 @@ body {
 .row {
   margin: 0; }
 
-#home, #work, .footer {
+#home, #work, footer {
   background-image: url("images/cubes.png");
   background-color: #3493AF;
   background-attachment: fixed;
@@ -192,18 +192,18 @@ a:link, a:visited {
   background-color: #FF6F69;
   color: #EDEDED; }
 
-.footer {
+footer {
   width: 100%;
   position: absolute;
   left: 0;
   height: 154px; }
-  .footer p {
+  footer p {
     position: relative;
     font-size: 1.4em;
     bottom: -15px; }
-  .footer h5 a:hover {
+  footer h5 a:hover {
     text-decoration: none; }
-  .footer span {
+  footer span {
     color: #FF6F69; }
 
 .social li {
