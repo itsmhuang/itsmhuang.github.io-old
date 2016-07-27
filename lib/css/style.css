@@ -104,12 +104,11 @@ a:link, a:visited {
   margin-bottom: 40px; }
 #about h2 {
   margin-top: 40px;
-  padding-bottom: 30px; }
+  font-size: 3.2em; }
 
 .skills li {
-  padding: 30px;
-  font-size: 2.2em;
-  display: inline; }
+  padding: 0 40px;
+  font-size: 2.2em; }
 
 #work h1 {
   margin-bottom: 20px; }
