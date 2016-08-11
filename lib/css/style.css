@@ -41,7 +41,7 @@ a:link, a:visited {
   max-height: 65px;
   height: 65px;
   margin-bottom: 0;
-  opacity: 0.95;
+  opacity: .95;
   background-color: #3493AF;
   border: 0; }
   .navbar.navbar-fixed-top .container {
@@ -100,8 +100,10 @@ a:link, a:visited {
   display: block;
   margin: auto;
   padding-bottom: 20px; }
+
 #about h1 {
   margin-bottom: 40px; }
+
 #about h2 {
   margin-top: 40px;
   font-size: 3.2em; }
@@ -123,7 +125,7 @@ a:link, a:visited {
 
 .text-content {
   background: #2C3E50;
-  opacity: 0.5;
+  opacity: .5;
   color: #FF6F69;
   cursor: pointer;
   display: table;
@@ -144,18 +146,22 @@ a:link, a:visited {
     font-size: 2em; }
 
 .gallery li:hover .text-content, .gallery li:focus .text-content, .gallery li:active .text-content {
-  opacity: 0.75; }
+  opacity: .75; }
 
 #contact a {
   color: #FF6F69; }
+
 #contact a:hover {
   text-decoration: none; }
+
 #contact form .row {
   margin-left: -15px;
   margin-right: -15px; }
+
 #contact .field {
   font-size: 1.7em;
   margin-top: 25px; }
+
 #contact #name, #contact #email, #contact #subject, #contact #message {
   border: 1px solid #2C3E50;
   border-radius: 0%;
@@ -165,19 +171,25 @@ a:link, a:visited {
   -moz-box-shadow: inset 0px;
   -o-box-shadow: inset 0px;
   -box-shadow: inset 0px; }
+
 #contact #name, #contact #email, #contact #subject {
   width: 100%;
   height: 40px; }
+
 #contact #message {
   width: 100%;
   height: 180px; }
+
 #contact ::-webkit-input-placeholder {
   color: #FF6F69; }
+
 #contact ::-moz-placeholder {
   color: #FF6F69;
   opacity: 1; }
+
 #contact ::-ms-input-placeholder {
   color: #FF6F69; }
+
 #contact button {
   height: 50px;
   width: 150px;
@@ -187,6 +199,7 @@ a:link, a:visited {
   background-color: #3493AF;
   float: right;
   border: 0px; }
+
 #contact button:hover {
   background-color: #FF6F69;
   color: #EDEDED; }
@@ -200,9 +213,7 @@ footer {
     position: relative;
     font-size: 1.4em;
     bottom: -15px; }
-  footer h5 a:hover {
-    text-decoration: none; }
-  footer span {
+  footer p a, footer p a:hover {
     color: #FF6F69; }
 
 .social li {
@@ -234,7 +245,6 @@ footer {
 @media screen and (max-width: 768px) {
   .collapsing, .in {
     background-color: #3493AF; }
-
   #home h1 {
     font-size: 6.5em;
     text-align: right; }
@@ -244,22 +254,17 @@ footer {
   #home h3 {
     font-size: 2em;
     text-align: right; }
-
   .skills h2 {
     margin-bottom: -5px; }
-
   .icon .fa {
     height: 35px;
     width: 35px;
     background-color: transparent;
     border: 3px solid #EDEDED;
     border-radius: 50%; }
-
   .fa {
     font-size: 2em;
     color: #EDEDED;
     position: relative;
     margin: 0 20px;
     padding-top: 5px; } }
-
-/*# sourceMappingURL=style.css.map */
