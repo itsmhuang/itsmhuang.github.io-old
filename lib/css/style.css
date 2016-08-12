@@ -6,7 +6,10 @@ html {
 body {
   font-family: "Muli", Sans-Serif;
   font-weight: 300;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 .container-fluid {
   padding: 0; }
@@ -20,11 +23,15 @@ body {
   background-attachment: fixed;
   color: #EDEDED; }
 
-#about, #contact {
+#about, #contact, main {
   background-image: url("images/cubes-9B9B9B.png");
   background-color: #EDEDED;
   background-attachment: fixed;
   color: #2C3E50; }
+
+main {
+  margin-top: 65px;
+  flex: 1; }
 
 p {
   font-size: 2em; }
@@ -208,17 +215,12 @@ a:link, a:visited {
   background-color: #FF6F69;
   color: #EDEDED; }
 
-footer {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  height: 154px; }
-  footer p {
-    position: relative;
-    font-size: 1.4em;
-    bottom: -15px; }
-  footer p a, footer p a:hover {
-    color: #FF6F69; }
+footer p {
+  position: relative;
+  font-size: 1.4em; }
+
+footer p a, footer p a:hover {
+  color: #FF6F69; }
 
 .social li {
   display: inline-block;
