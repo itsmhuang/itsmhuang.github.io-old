@@ -172,6 +172,10 @@ a:link, a:visited {
   -o-box-shadow: inset 0px;
   -box-shadow: inset 0px; }
 
+#contact #name:focus, #contact #email:focus, #contact #subject:focus, #contact #message:focus {
+  outline: none;
+  border: 2px solid #3493AF; }
+
 #contact #name, #contact #email, #contact #subject {
   width: 100%;
   height: 40px; }
