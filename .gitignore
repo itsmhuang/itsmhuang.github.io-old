@@ -1,2 +1,7 @@
 .DS_Store
 node_modules/
+gulpfile.js
+lib/css/.sass-cache/
+lib/css/style.css.map
+lib/css/style.sass
+package.json
