@@ -266,4 +266,9 @@ footer .social .fa:hover {
     color: #EDEDED;
     position: relative;
     margin: 0 20px;
-    padding-top: 5px; } }
+    padding-top: 5px; }
+  #work img.resize {
+    height: auto;
+    width: auto;
+    max-height: 240px;
+    max-width: 240px; } }
