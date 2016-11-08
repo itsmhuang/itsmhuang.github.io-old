@@ -33,6 +33,12 @@ main {
   margin-top: 65px;
   flex: 1; }
 
+.anchor-header {
+  font-size: 3.6em; }
+
+h3 {
+  font-size: 3em; }
+
 p {
   font-size: 2em; }
 
@@ -108,10 +114,10 @@ a:link, a:visited {
   margin: auto;
   padding-bottom: 20px; }
 
-#about h1 {
+#about .anchor-header {
   margin-bottom: 40px; }
 
-#about h2 {
+#about h3 {
   margin-top: 40px;
   font-size: 3.2em; }
 
@@ -119,41 +125,30 @@ a:link, a:visited {
   padding: 0 40px;
   font-size: 2.2em; }
 
-#work h1 {
+#work .anchor-header {
   margin-bottom: 20px; }
 
-.gallery li {
-  margin: 0 auto;
-  display: inline-block;
-  transform: translate(0, 0);
-  padding: 20px; }
-  .gallery li img {
-    width: 280px; }
-
-.text-content {
-  background: #2C3E50;
-  opacity: .5;
-  color: #FF6F69;
-  cursor: pointer;
-  display: table;
-  height: 280px;
-  width: 280px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms; }
-  .text-content span {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+#work .portfolio-item {
+  margin-bottom: 40px; }
+  #work .portfolio-item a {
+    color: #EDEDED; }
+  #work .portfolio-item h3, #work .portfolio-item h4 {
+    margin: 0 0 10px 0; }
+  #work .portfolio-item .link-to-port-item {
     font-size: 2em; }
+    #work .portfolio-item .link-to-port-item .fa {
+      font-size: 1em;
+      margin: 0; }
+  #work .portfolio-item a:hover, #work .portfolio-item a:focus {
+    color: #FF6F69; }
+  #work .portfolio-item img {
+    margin-bottom: 10px; }
 
-.gallery li:hover .text-content, .gallery li:focus .text-content, .gallery li:active .text-content {
-  opacity: .75; }
+#work img.resize {
+  height: auto;
+  width: auto;
+  max-height: 300px;
+  max-width: 300px; }
 
 #contact a {
   color: #FF6F69; }
@@ -222,30 +217,30 @@ footer p {
 footer p a, footer p a:hover {
   color: #FF6F69; }
 
-.social li {
+footer .social li {
   display: inline-block;
   margin-top: 10px; }
 
-.icon .fa {
+footer .icon .fa {
   height: 50px;
   width: 50px;
   background-color: transparent;
   border: 3px solid #EDEDED;
   border-radius: 50%; }
 
-.icon .fa:hover {
+footer .icon .fa:hover {
   background-color: #EDEDED;
   border: 3px solid #FF6F69;
   border-radius: 50%; }
 
-.fa {
+footer .fa {
   font-size: 2.8em;
   color: #EDEDED;
   position: relative;
   margin: 0 20px;
   padding-top: 8px; }
 
-.social .fa:hover {
+footer .social .fa:hover {
   color: #FF6F69; }
 
 @media screen and (max-width: 768px) {
@@ -260,8 +255,6 @@ footer p a, footer p a:hover {
   #home h3 {
     font-size: 2em;
     text-align: right; }
-  .skills h2 {
-    margin-bottom: -5px; }
   .icon .fa {
     height: 35px;
     width: 35px;
